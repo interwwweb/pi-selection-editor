@@ -1,0 +1,15 @@
+{
+  "name": "pi-selection-editor",
+  "version": "0.1.2",
+  "description": "Portable selection and OSC 52 clipboard editing for Pi prompts",
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["pi-package"],
+  "files": ["extensions", "src", "config", "scripts", "test", "README.md"],
+  "pi": { "extensions": ["./extensions/index.js"] },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=0.87.1 <0.88.0",
+    "@earendil-works/pi-tui": ">=0.87.1 <0.88.0"
+  },
+  "scripts": { "test": "node --test test/*.test.js" }
+}
